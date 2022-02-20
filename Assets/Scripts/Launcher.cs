@@ -27,6 +27,8 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        Screen.SetResolution(1920, 1080, false);
+
         // 使用 Settings連接伺服器
         PhotonNetwork.ConnectUsingSettings();
     }
